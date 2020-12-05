@@ -4,16 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
+import { reducers } from './store/index';
 import { modules } from './modules';
+import { IssuesComponent } from './components/issues/issues.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IssuesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot(reducers),
     modules,
   ],
   providers: [],
