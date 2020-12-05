@@ -123,6 +123,11 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngrx-issue-tracker"
+    }
+  },
+  "defaultProject": "ngrx-issue-tracker",
+  "cli": {
+    "analytics": false,
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
